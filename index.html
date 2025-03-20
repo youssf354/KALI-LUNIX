@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kali Linux Guide - Learn Ethical Hacking</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-content">
+            <video class="loading-video" autoplay loop muted playsinline>
+                <source src="kanna-kamui-blinking.1920x1080.mp4" type="video/mp4">
+                Your browser does not support video playback
+            </video>
+            <h2>Loading website...</h2>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <p class="designer-credit">Design & Development: <span class="designer-name">Youssef Adel</span></p>
+            <button class="share-button" onclick="shareWebsite()">
+                <i class="fas fa-share-alt"></i> Share Website
+            </button>
+        </div>
+    </div>
+
+    <!-- Website Content -->
+    <div class="site-content" style="display: none;">
+        <header>
+            <nav>
+                <div class="logo">Kali Linux Guide</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="home" class="hero">
+                <h1>Welcome to the World of Kali Linux</h1>
+                <p>Learn Ethical Hacking and Information Security</p>
+                <button class="cta-button hacker-effect" onclick="startHackerEffect()">Start Learning</button>
+            </section>
+
+            <section id="about" class="about">
+                <h2>What is Kali Linux?</h2>
+                <div class="about-content">
+                    <p>Kali Linux is an operating system specialized in penetration testing and information security. Developed by Offensive Security, it contains a wide range of penetration testing tools.</p>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Advanced Tools</h3>
+                            <p>Contains over 600 specialized tools</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-code"></i>
+                            <h3>Open Source</h3>
+                            <p>Free and open source</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-users"></i>
+                            <h3>Large Community</h3>
+                            <p>Strong community support</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="tools" class="services">
+                <h2>Essential Kali Linux Tools</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fas fa-network-wired"></i>
+                        <h3>Nmap</h3>
+                        <p>Network scanning and security analysis tool</p>
+                        <a href="#" class="tool-link">Learn More</a>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-key"></i>
+                        <h3>Metasploit</h3>
+                        <p>Penetration testing framework</p>
+                        <a href="#" class="tool-link">Learn More</a>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-lock"></i>
+                        <h3>Wireshark</h3>
+                        <p>Network packet analyzer</p>
+                        <a href="#" class="tool-link">Learn More</a>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-user-secret"></i>
+                        <h3>Burp Suite</h3>
+                        <p>Web application security testing</p>
+                        <a href="#" class="tool-link">Learn More</a>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-tools"></i>
+                        <h3>Kali Linux Tools</h3>
+                        <p>Discover the most important penetration testing and information security tools</p>
+                        <a href="tools.html" class="tool-link">Explore Tools</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="tutorials" class="tutorials">
+                <h2>Tutorials</h2>
+                <div class="tutorials-grid">
+                    <div class="tutorial-card">
+                        <img src="https://source.unsplash.com/random/400x300?linux" alt="Installing Kali Linux">
+                        <h3>Installing Kali Linux</h3>
+                        <p>Step-by-step guide to installing Kali Linux</p>
+                        <a href="#" class="tutorial-link">Start Learning</a>
+                    </div>
+                    <div class="tutorial-card">
+                        <img src="https://source.unsplash.com/random/400x300?hacking" alt="Hacking Basics">
+                        <h3>Hacking Basics</h3>
+                        <p>Learn the fundamental concepts of ethical hacking</p>
+                        <a href="#" class="tutorial-link">Start Learning</a>
+                    </div>
+                    <div class="tutorial-card">
+                        <img src="https://source.unsplash.com/random/400x300?security" alt="Security Tools">
+                        <h3>Security Tools</h3>
+                        <p>Learn about the most important security tools in Kali Linux</p>
+                        <a href="#" class="tutorial-link">Start Learning</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="contact">
+                <h2>Contact Us</h2>
+                <form id="contact-form">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Tools</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>All Rights Reserved &copy; 2024 - Kali Linux Guide</p>
+                <p class="designer-credit">Design & Development: <span class="designer-name">Youssef Adel</span></p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

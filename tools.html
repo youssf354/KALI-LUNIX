@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kali Linux Tools - Ethical Hacking Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Kali Linux Guide</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About Kali Linux</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="tools-hero">
+            <h1>Kali Linux Tools</h1>
+            <p>Discover the most important penetration testing and information security tools</p>
+        </section>
+
+        <section class="tools-categories">
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="network">Network Tools</button>
+                <button class="tab-btn" data-category="web">Web Testing Tools</button>
+                <button class="tab-btn" data-category="wireless">Wireless Network Tools</button>
+                <button class="tab-btn" data-category="forensics">Forensics Tools</button>
+            </div>
+
+            <div class="tools-grid">
+                <!-- Network Tools -->
+                <div class="tool-item" data-category="network">
+                    <div class="tool-header">
+                        <i class="fas fa-network-wired"></i>
+                        <h3>Nmap</h3>
+                    </div>
+                    <div class="tool-content">
+                        <p>Network scanning and security analysis tool. Used to scan devices and services available on the network.</p>
+                        <div class="tool-commands">
+                            <h4>Basic Commands:</h4>
+                            <pre><code>nmap -sS -sV [IP]    # Quick service scan
+nmap -p- [IP]         # Scan all ports
+nmap -O [IP]          # OS detection</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tool-item" data-category="network">
+                    <div class="tool-header">
+                        <i class="fas fa-lock"></i>
+                        <h3>Wireshark</h3>
+                    </div>
+                    <div class="tool-content">
+                        <p>Network packet analyzer. Used for analyzing network traffic and troubleshooting network issues.</p>
+                        <div class="tool-commands">
+                            <h4>Basic Usage:</h4>
+                            <pre><code>wireshark -i [interface]    # Start packet capture
+wireshark -r [file]           # Open capture file</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Testing Tools -->
+                <div class="tool-item" data-category="web">
+                    <div class="tool-header">
+                        <i class="fas fa-user-secret"></i>
+                        <h3>Burp Suite</h3>
+                    </div>
+                    <div class="tool-content">
+                        <p>Integrated framework for web application security testing. Includes tools for analyzing and diagnosing vulnerabilities.</p>
+                        <div class="tool-commands">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Proxy for traffic control</li>
+                                <li>Scanner for vulnerability detection</li>
+                                <li>Intruder for vulnerability testing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tool-item" data-category="web">
+                    <div class="tool-header">
+                        <i class="fas fa-bug"></i>
+                        <h3>OWASP ZAP</h3>
+                    </div>
+                    <div class="tool-content">
+                        <p>Open-source tool for web application security testing. Helps in discovering security vulnerabilities.</p>
+                        <div class="tool-commands">
+                            <h4>Basic Usage:</h4>
+                            <pre><code>zap-cli quick-scan [URL]    # Quick scan
+zap-cli active-scan [URL]     # Active scan</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wireless Network Tools -->
+                <div class="tool-item" data-category="wireless">
+                    <div class="tool-header">
+                        <i class="fas fa-wifi"></i>
+                        <h3>Aircrack-ng</h3>
+                    </div>
+                    <div class="tool-content">
+                        <p>Suite of tools for wireless network security testing. Used for analyzing and penetrating Wi-Fi networks.</p>
+                        <div class="tool-commands">
+                            <h4>Basic Commands:</h4>
+                            <pre><code>airmon-ng start wlan0    # Enable monitor mode
+airodump-ng wlan0mon       # Capture packets
+aircrack-ng [file]        # Crack encryption</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Forensics Tools -->
+                <div class="tool-item" data-category="forensics">
+                    <div class="tool-header">
+                        <i class="fas fa-search"></i>
+                        <h3>Autopsy</h3>
+                    </div>
+                    <div class="tool-content">
+                        <p>Graphical interface for digital forensics analysis. Used for examining devices and extracting evidence.</p>
+                        <div class="tool-commands">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Image analysis</li>
+                                <li>Deleted file recovery</li>
+                                <li>System log analysis</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="#">Community</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>All Rights Reserved &copy; 2024 - Kali Linux Guide</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Filter tools by category
+        document.querySelectorAll('.tab-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+                // Add active class to selected button
+                button.classList.add('active');
+
+                const category = button.dataset.category;
+                document.querySelectorAll('.tool-item').forEach(item => {
+                    if (category === 'all' || item.dataset.category === category) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
